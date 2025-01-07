@@ -1,0 +1,31 @@
+/* GG font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  outline: none;
+  scroll-behavior: smooth;
+  border: none;
+}
+
+/* global variables */
+:root {
+  --bg-color: #000;
+  --second-bg-color: #171414;
+  --text-color: #fff;
+  --main-color: #28d999;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
