@@ -192,7 +192,7 @@ section {
   background-color: var(--second-bg-color);
 }
 
-.about-circle  {
+.about-circle {
   position: absolute;
   width: 25vw;
   height: 25vw;
@@ -223,8 +223,8 @@ span {
 }
 
 .about-content h2 {
- text-align: left;
- line-height: 1.5;
+  text-align: left;
+  line-height: 1.5;
 }
 
 .about-content h3 {
@@ -234,4 +234,101 @@ span {
 .about-content p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
+}
+
+/* Education */
+.timeline-section {
+  min-height: 100vh;
+  padding: 100px 15px;
+  background-color: var(--bg-color);
+}
+
+.timeline-section h2 {
+  margin-bottom: 5rem;
+}
+
+.timeline-items {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.timeline-items::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  width: 5px;
+  height: 100%;
+  background-color: var(--main-color);
+  z-index: 1;
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.timeline-items:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) {
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  padding-left: calc(50% + 30px);
+  text-align: left;
+}
+
+.timeline-dot {
+  height: 21px;
+  width: 21px;
+  background-color: var(--main-color);
+  position: absolute;
+  left: calc(50% - 9px);
+  top: 5px;
+  border-radius: 50%;
+}
+
+.timeline-date {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--main-color);
+  margin: 6px 0 15px;
+}
+
+.timeline-content {
+  background-color: var(--main-color);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(244, 244, 244, 0.25);
+  padding: 30px;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: scale(1.1);
+}
+
+.timeline-content h3 {
+  font-size: 20px;
+  color: black;
+  margin: 0 0 10px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.timeline-content p {
+  color: black;
+  opacity: 0.8;
+  font-size: 16px;
+  font-size: 400;
+  line-height: 22px;
 }
