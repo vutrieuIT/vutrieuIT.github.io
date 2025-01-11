@@ -332,3 +332,78 @@ span {
   font-size: 400;
   line-height: 22px;
 }
+
+/* Skills */
+
+.skills {
+  background-color: var(--bg-color);
+}
+
+.skills h2 {
+  margin-bottom: 2rem;
+}
+
+.skills {
+  margin: 0 auto;
+}
+
+.skills-bar {
+  margin-top: 8rem;
+  padding: 25px 30px;
+  background-color: var(--bg-color);
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.skills-bar .bar {
+  margin: 20px 0;
+}
+
+.skills-bar .bar::before{
+  margin-top: 0;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 5px;
+}
+
+.skills-bar .bar .info span {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.skills-bar .bar .progress-line {
+  height: 10px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.skills-bar .bar .progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.skills-bar .bar .progress-line.python span {
+  width: 90%;
+  background: gold;
+} 
+
+.skills-bar .bar .progress-line.java span {
+  width: 70%;
+  background: blue;
+}
+
+.skills-bar .bar .progress-line.javascript span {
+  width: 80%;
+  background: green;
+}
+
